@@ -31,6 +31,7 @@ source "${KUBE_ROOT}/build/lib/release.sh"
 
 KUBE_RELEASE_RUN_TESTS=${KUBE_RELEASE_RUN_TESTS-y}
 
+# 进行构建环境的配置和验证
 kube::build::verify_prereqs
 kube::build::build_image
 kube::build::run_build_command make cross
